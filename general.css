@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+
+  /* Primary  */
+  --orange: rgb(255, 125, 26);
+  --pale-orange: hsl(25, 100%, 94%);
+
+  /* Secondary Color  */
+  --dark-blue:  hsl(220, 13%, 13%);
+  --dark-grayish-blue: hsl(219, 9%, 45%);
+  --grayish-blue : hsl(220, 14%, 75%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+}
+
+*,*::before,*::after{
+
+  box-sizing: border-box;
+
+}
+
+body{
+
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: 'Kumbh Sans', sans-serif;
+  line-height: 1.5;
+
+}
+
+h1,h2,h3,h4,h5,p{
+
+  margin-top: 0;
+
+}
+
+.fw-b{
+  font-weight: 700;
+}
+
+li{
+
+  list-style: none;
+  padding: 0.5rem;
+  
+}
+
+a{
+
+  position: relative;
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+
+}
+
+
+li:hover a{
+
+  color: var(--orange);
+
+}
+
+button{
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  width: 100%;
+  height: 100%;
+  font-family:'Kumbh Sans', sans-serif;
+
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 7px;
+  padding: 1rem 0;
+  transform: scale(1);
+  transition: all 250ms ease-in-out;
+
+}
+
+button:hover {
+
+  opacity: 0.7;
+  transform: scale(1.15);
+  
+}
+
+
+.fs-24 {
+  font-size: 1.5rem;
+}
+
+.fs-36{
+  font-size: 2.25rem;
+}
+
+image{
+  max-width: 100%;
+}

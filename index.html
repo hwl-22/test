@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+    <!-- Font Awesome Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navbar__logo fw-b fs-36">sneakers</div>
+
+        <div class="overlay">
+          <ul class="navbar__links">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar__cart">
+          <img class="cart" src="/images/icon-cart.svg" alt="cart" />
+          <div class="noti fw-b"></div>
+          <img src="/images/image-avatar.png" alt="profile" />
+        </div>
+
+        <div class="navbar__modal">
+          <div class="modal-title fw-b">
+            <p>Cart</p>
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <div class="modal-empty fw-b">Your cart is empty.</div>
+          <div class="modal-content">
+            <img
+              src="/images/image-product-1-thumbnail.jpg"
+              alt="product-img"
+            />
+            <p>
+              Fall Limited Edition <br />$125 x <span class="unit">0</span>
+              <span class="total-amount fw-b">300</span>
+            </p>
+            <img
+              class="empty-cart"
+              src="/images/icon-delete.svg"
+              alt="empty-cart"
+            />
+          </div>
+          <div class="button">
+            <button class="fw-b">Checkout</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="hero-display">
+        <div class="main-display">
+          <img
+            class="display"
+            src="/images/image-product-1.jpg"
+            alt="prduct-img"
+          />
+          <img class="icon next" src="images/icon-next.svg" />
+          <img class="icon previous" src="images/icon-previous.svg" />
+          <!-- <div class="secondary-display">
+            <img
+              src="/images/image-product-2.jpg"
+              alt="product-img"
+            />
+            <img
+              src="/images/image-product-3.jpg"
+              alt="product-img"
+            />
+            <img
+              src="/images/image-product-4.jpg"
+              alt="product-img"
+            />
+          </div> -->
+        </div>
+      </div>
+      <div class="hero-content">
+        <span class="fw-b">Sneaker Company</span>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          Sneakers These low-profile sneakers are your perfect casual wear
+          companion. Featuring a durable rubber outer sole, they’ll withstand
+          everything the weather can offer.
+        </p>
+        <div class="price fw-b">
+          <p>$125.00</p>
+          <p>50%</p>
+          <p>$250.00</p>
+        </div>
+        <div class="controls">
+          <img class="minus" src="/images/icon-minus.svg" alt="control-icon" />
+          <a class="amount" href="#">0</a>
+          <img class="plus" src="/images/icon-plus.svg" alt="control-icon" />
+        </div>
+        <div class="button">
+          <button class="fw-b add-cart">Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+</html>
